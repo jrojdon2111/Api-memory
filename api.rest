@@ -1,0 +1,65 @@
+###
+
+GET http://localhost:3000/api/products
+
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "nombre": "Teclado",
+    "precio": 88
+}
+
+###
+
+GET http://localhost:3000/api/products/4
+
+###
+
+POST http://localhost:3000/api/products HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "nombre": "Pantalla", 
+    "precio": 19 
+}
+
+###
+
+PUT http://localhost:3000/api/products/7 HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "nombre": "Alfombra", 
+    "precio": 99 
+}
+
+###
+DELETE http://localhost:3000/api/products/4
+
+//Aquí tenemos ejemplos
+###
+POST http://localhost:3000/api/products HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "nombre": "Armario", 
+    "precio": 19 
+}
+
+###
+PUT http://localhost:3000/api/products/1 HTTP/1.1
+Content-Type: application/json
+{
+    "nombre": "Lapiz", 
+    "precio": 19 
+}
+
+###
+DELETE http://localhost:3000/api/products/2 HTTP/1.1
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/api/products/1
